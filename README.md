@@ -1,1 +1,1 @@
-# webboilerplate template
+# Dummy store
