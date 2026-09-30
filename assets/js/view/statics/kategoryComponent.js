@@ -1,4 +1,4 @@
-
+import {categoryCallback} from '../../controller/categoryCallback.js'
 export default function createCategoryNav(parentElement, myCategoryList) {
 
   let createCategoryNavContainer = document.createElement("nav");
@@ -18,6 +18,9 @@ function createCategoryButton(catData) {
   myButton.innerText = catData.name;
 
   /* to do: connect button to callback*/
+  myButton.addEventListener('click',()=>{
+    categoryCallback(catData.slug);
+  })
   
   return myButton;
 }
