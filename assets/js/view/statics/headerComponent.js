@@ -8,10 +8,10 @@ export default function buildHeader(parentElement){
 
 let myHeaderElement=document.createElement("header")
 
-    let myHtml=`<div id="headerlogobox"></div>`
+  
 
-myHeaderElement.innerHTML=myHtml
-myHeaderElement.appendChild(createLogo(headerCallback))
+
+myHeaderElement.appendChild(createLogo())
 myHeaderElement.appendChild(createHeadline())
 
 createBasketIcon(myHeaderElement)

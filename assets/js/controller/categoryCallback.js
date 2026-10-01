@@ -4,10 +4,11 @@ import {renderProductView} from '../view/productView.js'
 
 export async function categoryCallback(mySlug){
 
-    let myData=await getProductsByCategory(mySlug)
+    let rawData=await getProductsByCategory(mySlug)
 
-   
+const myData=rawData.products
 
+  
 renderProductView(myData)
     
 }

@@ -24,5 +24,6 @@ createCategoryNav(myAppElement,myCategoryList)
 const myDynamicElement=document.createElement('section')
 myDynamicElement.id='content'
 myAppElement.appendChild(myDynamicElement)
+
  }
 
